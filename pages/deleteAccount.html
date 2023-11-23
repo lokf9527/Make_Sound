@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>刪除帳戶 - Make Sound</title>
+
+    <%- include('./layout/head'); -%>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <div class="container pb-3 pb-md-6 mb-4 mb-md-8">
+            <div class="row">
+                <div class="mb-10">
+                    <h3 class="fw-bold">帳號設定</h3>
+                    <hr>
+                </div>
+
+                <%- include('./layout/userNavbar'); -%>
+
+                    <div class="col-12 col-md-9 col-lg-10">
+                        <div class="px-4">
+                            <h3 class="fw-bold">刪除帳戶</span></h3>
+
+                            <p>一旦刪除帳戶，帳戶裡所有資料將無法恢復。</p>
+
+                            <a class="btn btn-primary px-10" href="index.html">確認</a>
+
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

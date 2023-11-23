@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>建立歌單 - Make Sound</title>
+
+    <%- include('./layout/head'); -%>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <div class="container pb-3 pb-md-6 mb-4 mb-md-8">
+            <div class="row">
+                <div class="mb-10">
+                    <h3 class="fw-bold">我的</h3>
+                    <hr>
+                </div>
+                
+                <%- include('./layout/myNavbar'); -%>
+
+                    <div class="col-12 col-md-9 col-lg-10">
+                        <div class="px-4">
+                            <h3 class="fw-bold">我的 ｜ 我的歌單 ｜ <span class="text-primary">建立歌單</span></h3>
+
+                            <form action="" class="row mt-4" novalidate>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card border-0">
+                                        <img src="../assets/images/card4.png" class="card-img-top" alt="上傳圖片">
+                                        <div class="card-body px-0">
+                                            <p class="card-text text-gray2">
+                                                建議尺寸：500 x 500 px 以上，<br>
+                                                圖片檔案大小不可超過 2 MB
+                                            </p>
+                                            <a href="#" class="btn btn-outline-primary">上傳圖片</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-log-8">
+
+                                    <label for="title" class="form-label">歌單名稱</label>
+                                    <input type="text" class="form-control py-3" id="title" placeholder="歌單名稱" required>
+                                    <div class="invalid-feedback">
+                                        wrong!!please enter again!
+                                    </div>
+
+                                    <label for="info" class="form-label mt-4">歌單介紹</label>
+                                    <textarea class="form-control" id="info" rows="7" required>歌單介紹</textarea>
+                                    <div class="invalid-feedback">
+                                        wrong!!please enter again!
+                                    </div>
+                                    <p class="mt-4 text-primary">※ 若繼續操作，即表示你同意 Make Sound 存取您選擇上傳的圖片及資訊。</p>
+                                    <div class="text-end">
+                                        <a href="#" class="btn btn-primary px-10">儲存</a>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

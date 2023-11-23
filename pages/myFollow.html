@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>我的追蹤 - Make Sound</title>
+
+    <%- include('./layout/head'); -%>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <div class="container pb-3 pb-md-6 mb-4 mb-md-8">
+            <div class="row">
+                <div class="mb-10">
+                    <h3 class="fw-bold">我的</h3>
+                    <hr>
+                </div>
+
+                <%- include('./layout/myNavbar'); -%>
+
+                    <div class="col-12 col-md-9 col-lg-10">
+                        <div class="px-4">
+                            <h3 class="fw-bold">我的 ｜ <span class="text-primary">我的追蹤</span></h3>
+
+                            <ul class="list-group list-group-flush border-bottom">
+                                <li class="list-group-item px-0">
+
+                                    <div class="card border-0">
+                                        <div class="row align-items-center  justify-content-between">
+                                            <div class="col-1">
+                                                <p class="fw-bold m-0 fs-5">1</p>
+                                            </div>
+                                            <div class="col-2 col-lg-1">
+                                                <img src="../assets/images/card17.png" class="img-fluid rounded"
+                                                    alt="理想混蛋">
+                                            </div>
+                                            <div class="col">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">理想混蛋</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto ms-auto">
+                                                <a href="" class="btn btn-primary d-flex text-white rounded-pill align-items-center px-6">
+                                                    已追蹤
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                                <li class="list-group-item px-0">
+
+                                    <div class="card border-0">
+                                        <div class="row align-items-center  justify-content-between">
+                                            <div class="col-1">
+                                                <p class="fw-bold m-0 fs-5">2</p>
+                                            </div>
+                                            <div class="col-2 col-lg-1">
+                                                <img src="../assets/images/card19.png" class="img-fluid rounded"
+                                                    alt="理想混蛋 — 雞丁">
+                                            </div>
+                                            <div class="col">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">理想混蛋 — 雞丁</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto ms-auto">
+                                                <a href="" class="btn btn-primary d-flex text-white rounded-pill align-items-center px-6">
+                                                    已追蹤
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+
+                            <div class="text-center mt-10">
+                                <button type="button" class="btn btn-outline-gray2 rounded-0">載入更多</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

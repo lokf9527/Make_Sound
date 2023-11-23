@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>註冊 - Make Sound</title>
+
+    <%- include('./layout/head'); -%>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <div class="container pb-3 pb-md-6  mb-4 mb-md-8">
+            <div class="row g-0">
+                <div class="col d-none d-md-block">
+                    <div class="h-100 d-flex justify-content-center align-items-center">
+
+                        <img src="../assets/images/signUp.png" alt="登入圖" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="border p-5 p-lg-10 text-center">
+                        <h3 class="fw-bold">註冊即可使用 Make Sound</h3>
+
+                        <form action="" class="needs-validation  text-start" novalidate>
+
+                            <div class="mt-10">
+                                <label for="fullname" class="form-label">本名</label>
+                                <input type="text" class="form-control py-3" id="fullname" placeholder="本名" required>
+                                <div class="invalid-feedback">
+                                    wrong!!please enter again!
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <label for="username" class="form-label">使用者名稱</label>
+                                <input type="text" class="form-control py-3" id="username" placeholder="使用者名稱" required>
+                                <div class="invalid-feedback">
+                                    wrong!!please enter again!
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <label for="nickname" class="form-label">暱稱</label>
+                                <input type="text" class="form-control py-3" id="nickname" placeholder="暱稱" required>
+                                <div class="invalid-feedback">
+                                    wrong!!please enter again!
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <label for="password" class="form-label">密碼</label>
+                                <input type="text" class="form-control py-3" id="password" placeholder="密碼" required>
+                                <div class="invalid-feedback">
+                                    wrong!!please enter again!
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <label for="password" class="form-label">密碼確認</label>
+                                <input type="text" class="form-control py-3" id="password" placeholder="密碼確認" required>
+                                <div class="invalid-feedback">
+                                    wrong!!please enter again!
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <button class="btn btn-primary w-100 py-3" type="submit">註冊</button>
+                            </div>
+
+                        </form>
+
+                        <p class="m-0 mt-10 fw-bold ">已經註冊了嗎？
+                            <a href="../pages/signIn.html" class="text-primary">快來登入</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>
