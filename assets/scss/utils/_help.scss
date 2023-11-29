@@ -1,3 +1,112 @@
 .decoration-none{
     text-decoration: none;
 }
+.container-small{
+    max-width:1056px;
+    margin:0 auto
+}
+.vertical-bottom{
+    vertical-align: bottom;
+}
+.image-container{
+    position: relative;
+    
+}
+
+.player{
+    width: 480px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    
+    
+  }
+.explore-overlay {
+    position: absolute;
+    top: 66%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+#material-symbols{
+    display: none;
+}
+.hover-material-symbols:hover #material-symbols{
+    display: inline-block;
+}
+.explore-material-symbols-overlay{
+    position: absolute;
+    top: 62%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: #BE2623;
+    height: 47px;
+    width: 47px;
+  }
+.article-text-overlay{
+    position: absolute;
+    top: 54%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.article-material-symbols-overlay{
+    position: absolute;
+    top: 51%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: #BE2623;
+    height: 47px;
+    width: 47px;
+  }
+.music-background {
+    background-image: url('../assets/images/background/background01.svg');
+    background-repeat: no-repeat;
+    background-position:bottom;
+}
+.article-background-left{
+    background-image: url('../assets/images/background/background02.svg');
+    background-repeat: no-repeat;
+    background-position:left bottom;
+}
+.article-background-right {
+    background-image: url('../assets/images/background/background03.svg');
+    background-repeat: no-repeat;
+    background-position:right bottom;
+}
+
+.outline:hover{
+  border: 1px solid #DD4A48;
+}
+.arrow{
+    background-image: url('../assets/images/arrow_circle_right.svg');
+	position: relative;  /*相對位置*/
+}
+.arrow::before{ 
+	content:"";
+	position: absolute; /*利用absolute定位*/
+	right: 1px;  /*調整位置*/
+	background-image: url('../assets/images/make_sound_logo.svg'); /*插入圖片*/
+}
+.link-underline-hover {
+    text-decoration: none;
+}
+
+.link-underline-hover:hover {
+    border-bottom:2px solid #BE2623;
+}
+
+.login-btn{
+    color:#BE2623;
+    background-color: white;
+}
+.login-btn:hover{
+    background-color: #DD4A48;
+    color: white;
+}

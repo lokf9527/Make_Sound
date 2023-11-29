@@ -316,7 +316,8 @@ $theme-colors: (
   "secondary":  #0D3745,//custom
   "tertiary": #DD4A48,//custom 
   "quaternary": #1E576B,//custom 
-  "success":    $success,
+  // "success":    $success,
+  "success":    #39C018,//custom 
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
@@ -433,6 +434,7 @@ $spacers: (
   4: $spacer, //16
   5: $spacer * 1.25, // 20
   6: $spacer * 1.5, // 24
+  7: $spacer * 1.75, // 28
   8: $spacer * 2, // 32
   9: $spacer * 2.25,  //36
   10: $spacer * 2.5,  //40
@@ -440,6 +442,7 @@ $spacers: (
   14: $spacer * 3.5,  //56
   15: $spacer * 3.75,  //60
   16: $spacer * 4,  //64
+  20: $spacer*4.5,//72
   17: $spacer * 5,  //80
   18: $spacer * 34.25,  //616.5
   19: $spacer * 20.25,  //324
@@ -668,6 +671,7 @@ $h6-font-size:                $font-size-base !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
+  0: $font-size-base * 3.5,//56px
   1: $h1-font-size,//40px
   2: $h2-font-size,//32px
   3: $h3-font-size,//28px

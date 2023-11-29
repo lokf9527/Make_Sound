@@ -5,18 +5,450 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>index</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <title>MakeSound</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
 </head>
 
 <body>
   <%- include('./layout/header'); -%>
+    <!-- <div class="swiper-slide"><img src="../assets/images/banner/banner03.svg" alt=""></div>
+    <div class="swiper-slide"><img src="../assets/images/banner/banner01.svg" alt=""></div>
+    <div class="swiper-slide"><img src="../assets/images/banner/banner02.svg" alt=""></div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div> -->
+    <!-- 每日一聲 -->
+    <div class="music-background">
+      <div class="container-small py-17">
+        <div class="row">
+          <div class="me-14 " style="max-width: 369px;">
+            <p class="fs-2 text-gray1 fw-bold">每日一聲</p>
+            <div class="p-3 rounded-4 shadow bg-white">
+              <img class="rounded-4 mb-4" style="height: 321px; width: 321px;" src="../assets/images/music/music01.svg"
+                alt="">
+              <div>
+                <p class="fs-4 fw-bold mb-1">I’ m here</p>
+                <p class="fs-5 text-gray2">Osean</p>
+              </div>
+              <div class="border-top border-3 border-gray3 pt-5 d-flex justify-content-between">
+                <div class="mt-3">
+                  <span class=" material-symbols-outlined text-quaternary"> favorite </span>
+                </div>
+                <span class="fs-5 mt-2">568</span>
+                <span class="mt-3 me-6 material-symbols-outlined text-quaternary"> add </span>
+                <span class="mt-3 me-15 material-symbols-outlined text-quaternary"> share_windows </span>
+                <span class="fs-0 material-symbols-outlined text-primary"> play_circle </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <p class="fs-2 text-gray1 fw-bold">即時熱門榜</p>
+            <ul class="list-unstyled" style="width: 635px; ">
+
+              <li class="d-flex justify-content-between py-3 px-4 mb-2 shadow rounded-4 outline">
+                <div class="d-flex">
+                  <span class="mt-7 me-2">1</span>
+                  <span class="mt-7 me-6 text-success material-symbols-outlined"> arrow_drop_up </span>
+                  <img class="rounded-4" src="../assets/images/music/music02.svg" style="height: 80px; width: 80px  ;"
+                    alt="">
+                  <ul class="list-unstyled ms-6 mt-4">
+                    <li class="fs-4 text-gray1 fw-bold">都是浪漫害的</li>
+                    <li class="text-gray2">麋先生</li>
+                  </ul>
+                </div>
+                <div class="d-flex">
+                  <span class="mt-7 ms-6 material-symbols-outlined text-quaternary"> favorite </span>
+                  <span class="mt-7 ms-1">568</span>
+                  <span class="mt-5 ms-6  fs-1 material-symbols-outlined text-primary"> play_circle </span>
+                </div>
+              </li>
+
+              <li class="d-flex justify-content-between py-3 px-4 mb-2 shadow rounded-4 outline">
+                <div class="d-flex">
+                  <span class="mt-7 me-2">2</span>
+                  <span class="mt-7 me-6 text-success material-symbols-outlined"> arrow_drop_up </span>
+                  <img class="rounded-4" src="../assets/images/music/music03.svg" style="height: 80px; width: 80px  ;"
+                    alt="">
+                  <ul class="list-unstyled ms-6 mt-4">
+                    <li class="fs-4 text-gray1 fw-bold">分分合合</li>
+                    <li class="text-gray2">賴慈泓</li>
+                  </ul>
+                </div>
+                <div class="d-flex">
+                  <span class="mt-7 ms-6 material-symbols-outlined text-quaternary"> favorite </span>
+                  <span class="mt-7 ms-1">568</span>
+                  <span class="mt-5 ms-6  fs-1 material-symbols-outlined text-primary"> play_circle </span>
+                </div>
+              </li>
+
+              <li class="d-flex justify-content-between py-3 px-4 mb-2 shadow rounded-4 outline">
+                <div class="d-flex">
+                  <span class="mt-7 me-2">3</span>
+                  <span class="mt-7 me-6 text-success material-symbols-outlined"> arrow_drop_up </span>
+                  <img class="rounded-4" src="../assets/images/music/music04.svg" style="height: 80px; width: 80px  ;"
+                    alt="">
+                  <ul class="list-unstyled ms-6 mt-4">
+                    <li class="fs-4 text-gray1 fw-bold">不要再聽那些你討厭的歌</li>
+                    <li class="text-gray2">打倒三明治</li>
+                  </ul>
+                </div>
+                <div class="d-flex">
+                  <span class="mt-7 ms-6 material-symbols-outlined text-quaternary"> favorite </span>
+                  <span class="mt-7 ms-1">568</span>
+                  <span class="mt-5 ms-6  fs-1 material-symbols-outlined text-primary"> play_circle </span>
+                </div>
+              </li>
+
+              <li class="d-flex justify-content-between py-3 px-4 mb-2 shadow rounded-4 outline">
+                <div class="d-flex">
+                  <span class="mt-7 me-2">4</span>
+                  <span class="mt-7 me-6 text-success material-symbols-outlined"> arrow_drop_up </span>
+                  <img class="rounded-4" src="../assets/images/music/music05.svg" style="height: 80px; width: 80px  ;"
+                    alt="">
+                  <ul class="list-unstyled ms-6 mt-4">
+                    <li class="fs-4 text-gray1 fw-bold">時間慢且行</li>
+                    <li class="text-gray2">歐巴尚青</li>
+                  </ul>
+                </div>
+                <div class="d-flex">
+                  <span class="mt-7 ms-6 material-symbols-outlined text-quaternary"> favorite </span>
+                  <span class="mt-7 ms-1">568</span>
+                  <span class="mt-5 ms-6  fs-1 material-symbols-outlined text-primary"> play_circle </span>
+                </div>
+              </li>
+
+              <li class="d-flex justify-content-between py-3 px-4 mb-2 shadow rounded-4 outline bg-white">
+                <div class="d-flex">
+                  <span class="mt-7 me-2">5</span>
+                  <span class="mt-7 me-6 text-success material-symbols-outlined"> arrow_drop_up </span>
+                  <img class="rounded-4" src="../assets/images/music/music06.svg" style="height: 80px; width: 80px  ;"
+                    alt="">
+                  <ul class="list-unstyled ms-6 mt-4">
+                    <li class="fs-4 text-gray1 fw-bold">Everytime</li>
+                    <li class="text-gray2">EveryDaze, O3ohn</li>
+                  </ul>
+                </div>
+                <div class="d-flex">
+                  <span class="mt-7 ms-6 material-symbols-outlined text-quaternary"> favorite </span>
+                  <span class="mt-7 ms-1">568</span>
+                  <span class="mt-5 ms-6  fs-1 material-symbols-outlined text-primary"> play_circle </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 探索 -->
+    <div class="container-small py-17">
+      <div class="d-flex justify-content-between">
+        <p class="fs-2 text-gray1 fw-bold">探索</p>
+        <a class="fs-5 decoration-none text-dark" href="">更多風格
+          <span class="vertical-bottom text-primary  material-symbols-outlined">
+            arrow_forward
+          </span>
+        </a>
+      </div>
+      <ul class="list-unstyled d-flex justify-content-between">
+        <li class="outline rounded-3 hover-material-symbols">
+          <div class="card image-container p-4 border border-2 border-gray4" style="width: 251px;">
+            <img src="../assets/images/music/music07.svg" class="rounded-4 mb-3" alt="...">
+            <div class="d-flex">
+              <div class="explore-overlay">24首曲目</div>
+              <a href="">
+                <img class="explore-material-symbols-overlay" id="material-symbols"
+                  src="../assets/images/arrow_circle_right.svg" alt="">
+              </a>
+            </div>
+            <div class="">
+              <h5 class="card-title">POP</h5>
+              <p class="card-text text-gray2">MakeSound</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="outline rounded-3 hover-material-symbols">
+          <div class="card image-container p-4 border border-2 border-gray4" style="width: 251px;">
+            <img src="../assets/images/music/music08.svg" class="rounded-4 mb-3" alt="...">
+            <div class="d-flex">
+              <div class="explore-overlay">24首曲目</div>
+              <a href="">
+                <img class="explore-material-symbols-overlay" id="material-symbols"
+                  src="../assets/images/arrow_circle_right.svg" alt="">
+              </a>
+            </div>
+            <div class="">
+              <h5 class="card-title">R&B</h5>
+              <p class="card-text text-gray2">MakeSound</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="outline rounded-3 hover-material-symbols">
+          <div class="card image-container p-4 border border-2 border-gray4" style="width: 251px;">
+            <img src="../assets/images/music/music09.svg" class="rounded-4 mb-3" alt="...">
+            <div class="d-flex">
+              <div class="explore-overlay">24首曲目</div>
+              <a href="">
+                <img class="explore-material-symbols-overlay" id="material-symbols"
+                  src="../assets/images/arrow_circle_right.svg" alt="">
+              </a>
+            </div>
+            <div class="">
+              <h5 class="card-title">FOLK</h5>
+              <p class="card-text text-gray2">MakeSound</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="outline rounded-3 hover-material-symbols">
+          <div class="card image-container p-4 border border-2 border-gray4" style="width: 251px;">
+            <img src="../assets/images/music/music10.svg" class="rounded-4 mb-3" alt="...">
+            <div class="d-flex">
+              <div class="explore-overlay">24首曲目</div>
+              <a href="">
+                <img class="explore-material-symbols-overlay" id="material-symbols"
+                  src="../assets/images/arrow_circle_right.svg" alt="">
+              </a>
+            </div>
+            <div class="">
+              <h5 class="card-title">JAZZ</h5>
+              <p class="card-text text-gray2">MakeSound</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 鳴人堂 -->
+    <div class="article-background-left ">
+      <div class="article-background-right">
+        <div class="container-small py-17">
+          <div class="d-flex justify-content-between">
+            <p class="fs-2 text-gray1 fw-bold">鳴人堂</p>
+            <a class="fs-5 decoration-none text-dark" href="">更多風格<span
+                class="vertical-bottom text-primary  material-symbols-outlined">
+                arrow_forward
+              </span></a>
+          </div>
+          <ul class="list-unstyled d-flex justify-content-between">
+
+            <li class="hover-material-symbols outline rounded-3">
+              <div class="card image-container p-4 border border-2 border-gray4" style="width: 251px;">
+                <img src="../assets/images/music/music11.svg" class="rounded-4 mb-3" alt="...">
+                <div class="d-flex">
+                  <div class="article-text-overlay">共123粉絲</div>
+                  <a href="">
+                    <img class="article-material-symbols-overlay" id="material-symbols"
+                      src="../assets/images/arrow_circle_right.svg" alt="">
+                  </a>
+                </div>
+                <div class="">
+                  <h5 class="card-title">椅子樂團</h5>
+                  <p class="card-text text-gray2">《Real Love Is...》緩緩降落地表， 寫給夥伴，寫給摯愛給家人，也寫給追逐你的那個自己。奔跑的過程，都是愛呀。</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="hover-material-symbols outline rounded-3">
+              <div class="card p-4 border border-2 border-gray4" style="width: 251px;">
+                <img src="../assets/images/music/music12.svg" class="rounded-4 mb-3" alt="...">
+                <div class="d-flex">
+                  <div class="article-text-overlay">共123粉絲</div>
+                  <a href="">
+                    <img class="article-material-symbols-overlay" id="material-symbols"
+                      src="../assets/images/arrow_circle_right.svg" alt="">
+                  </a>
+                </div>
+                <div class="">
+                  <h5 class="card-title">草東沒有派對</h5>
+                  <p class="card-text text-gray2">破舊揚聲器裡那類比聲響呢喃哼唱伴隨熟識的節奏而語句及旨意這裡沒有派對，No Party For Cao Dong！</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="hover-material-symbols outline rounded-3">
+              <div class="card p-4 border border-2 border-gray4" style="width: 251px;">
+                <img src="../assets/images/music/music13.svg" class="rounded-4 mb-3" alt="...">
+                <div class="d-flex">
+                  <div class="article-text-overlay">共123粉絲</div>
+                  <a href="">
+                    <img class="article-material-symbols-overlay" id="material-symbols"
+                      src="../assets/images/arrow_circle_right.svg" alt="">
+                  </a>
+                </div>
+                <div class="">
+                  <h5 class="card-title">告五人</h5>
+                  <p class="card-text text-gray2">音樂感染力強，雙主唱音域寬，低迴到昂揚，聲線與鼓點交織錯落，映射萬千宇宙抵達億隻耳朵。</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="hover-material-symbols outline rounded-3">
+              <div class="card p-4 border border-2 border-gray4" style="width: 251px;">
+                <img src="../assets/images/music/music14.svg" class="rounded-4 mb-3" alt="...">
+                <div class="d-flex">
+                  <div class="article-text-overlay">共123粉絲</div>
+                  <a href="">
+                    <img class="article-material-symbols-overlay" id="material-symbols"
+                      src="../assets/images/arrow_circle_right.svg" alt="">
+                  </a>
+                </div>
+                <div class="">
+                  <h5 class="card-title">Hello Nicole</h5>
+                  <p class="card-text text-gray2">團員們來自不同背景，曲風涵蓋流行、電子、搖滾,壓抑而自溺，在吉他反饋噪音與合成音色鋪陳中。</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 看看大家怎麼說 -->
+    <div class="container-small py-17">
+      <div class="d-flex justify-content-between">
+        <p class="fs-2 text-gray1 fw-bold">看看大家怎麼說</p>
+        <a class="fs-5 decoration-none text-dark" href="">
+          <span class="vertical-bottom text-primary me-4 material-symbols-outlined">
+            arrow_back
+          </span>
+          <span class="vertical-bottom text-primary  material-symbols-outlined">
+            arrow_forward
+          </span></a>
+      </div>
+      <ul class="list-unstyled d-flex justify-content-between">
+
+        <li class="outline rounded-4">
+          <div class="p-4 bg-gray4 rounded-4" style="width: 342px;">
+            <div class="d-flex pb-4 mb-4 border-bottom border-1 border-gray3" style="width: 310px;">
+              <img class="rounded-5" src="../assets/images/user/user01.svg" style="height: 48px; width: 48px ;" alt="">
+              <ul class="list-unstyled ms-3">
+                <li class="fs-6 text-gray1 fw-medium">陳小春</li>
+                <li class="fs-6 text-gray2">會員．10分鐘前</li>
+              </ul>
+            </div>
+            <p>舒服又療癒！</p>
+            <div class="d-flex justify-content-between p-2 mb-4 bg-white rounded-3" style="width: 310px;">
+              <div class="d-flex">
+                <img class="rounded-4" src="../assets/images/music/music15.svg" style="height: 48px; width: 48px ;"
+                  alt="">
+                <ul class="list-unstyled ms-3">
+                  <li class="fs-6 text-gray1 fw-medium">Its My Way</li>
+                  <li class="fs-6 text-gray2">柯智棠</li>
+                </ul>
+              </div>
+              <span class="mt-3 material-symbols-outlined text-quaternary"> favorite </span>
+            </div>
+          </div>
+        </li>
+
+        <li class="outline rounded-4">
+          <div class="p-4 bg-gray4 rounded-4" style="width: 342px;">
+            <div class="d-flex pb-4 mb-4 border-bottom border-1 border-gray3" style="width: 310px;">
+              <img class="rounded-5" src="../assets/images/user/user02.svg" style="height: 48px; width: 48px ;" alt="">
+              <ul class="list-unstyled ms-3">
+                <li class="fs-6 text-gray1 fw-medium">黃忠義</li>
+                <li class="fs-6 text-gray2">會員．50分鐘前</li>
+              </ul>
+            </div>
+            <p>舒壓好歌曲！</p>
+            <div class="d-flex justify-content-between p-2 mb-4 bg-white rounded-3" style="width: 310px;">
+              <div class="d-flex">
+                <img class="rounded-4" src="../assets/images/music/music16.svg" style="height: 48px; width: 48px ;"
+                  alt="">
+                <ul class="list-unstyled ms-3">
+                  <li class="fs-6 text-gray1 fw-medium">花</li>
+                  <li class="fs-6 text-gray2">Hello Nico</li>
+                </ul>
+              </div>
+              <span class="mt-3 material-symbols-outlined text-quaternary"> favorite </span>
+            </div>
+          </div>
+        </li>
+
+        <li class="outline rounded-4">
+          <div class="p-4 bg-gray4 rounded-4" style="width: 342px;">
+            <div class="d-flex pb-4 mb-4 border-bottom border-1 border-gray3" style="width: 310px;">
+              <img class="rounded-5" src="../assets/images/user/user03.svg" style="height: 48px; width: 48px ;" alt="">
+              <ul class="list-unstyled ms-3">
+                <li class="fs-6 text-gray1 fw-medium">林梅玲</li>
+                <li class="fs-6 text-gray2">會員．5小時前</li>
+              </ul>
+            </div>
+            <p>這首歌配上冬天剛好！</p>
+            <div class="d-flex justify-content-between p-2 mb-4 bg-white rounded-3" style="width: 310px;">
+              <div class="d-flex">
+                <img class="rounded-4" src="../assets/images/music/music17.svg" style="height: 48px; width: 48px ;"
+                  alt="">
+                <ul class="list-unstyled ms-3">
+                  <li class="fs-6 text-gray1 fw-medium">magnolia</li>
+                  <li class="fs-6 text-gray2">Keshi</li>
+                </ul>
+              </div>
+              <span class="mt-3 material-symbols-outlined text-quaternary"> favorite </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- player -->
+    <div class="player bg-white rounded-4 p-6 m-8">
+      <div class=" d-flex justify-content-between p-4 mb-4 bg-gray4 rounded-3">
+        <div class=" d-flex">
+          <img class="rounded-4" src="../assets/images/music/music16.svg" style="height: 80px; width: 80px ;" alt="">
+          <ul class="list-unstyled ms-3">
+            <li class="fs-4 text-gray1 fw-medium">花</li>
+            <li class="fs-5 text-gray2">Hello Nico</li>
+          </ul>
+        </div>
+        <span class="mt-7 fs-3 material-symbols-outlined text-quaternary"> favorite </span>
+      </div>
+      <div class="border-bottom pb-6 border-3 border-gray3 pt-5 d-flex justify-content-between">
+        <span class="fs-1 mt-2 material-symbols-outlined">
+          shuffle
+        </span>
+        <span class="fs-1 mt-2 material-symbols-outlined">
+          skip_previous
+        </span>
+        <span class="fs-0 material-symbols-outlined text-primary"> play_circle </span>
+        <span class="fs-1 mt-2 material-symbols-outlined">
+          skip_next
+        </span>
+        <span class="fs-1 mt-2 material-symbols-outlined">
+          refresh
+        </span>
+      </div>
+      <div class="btn btn-outline-primary w-100 mt-6 fw-medium border-2">登入建立歌單</div>
+    </div>
     <%- include('./layout/footer'); -%>
 
       <script type="module" src="../main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
 </body>
 
 </html>
