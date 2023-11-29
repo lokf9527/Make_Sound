@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>基本資料 - Make Sound</title>
+
+    <%- include('./layout/head'); -%>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <div class="container pb-3 pb-md-6 mb-4 mb-md-8">
+            <div class="row">
+                <div class="mb-10">
+                    <h3 class="fw-bold">帳號設定</h3>
+                    <hr>
+                </div>
+
+                <%- include('./layout/userNavbar'); -%>
+
+                    <div class="col-12 col-md-9 col-lg-10">
+                        <div class="px-4">
+                            <h3 class="fw-bold">帳號設定 ｜ <span class="text-primary">基本資料</span></h3>
+
+
+                            <form action="" class="row needs-validation border border-1 p-8 mt-4" novalidate>
+
+                                <div class="col-12">
+                                    <div class="row flex-column-reverse flex-md-row">
+                                        <div class="col">
+                                            <div>
+                                                <label for="fullname" class="form-label fw-bold">本名</label>
+                                                <input type="text" class="form-control py-3" id="fullname"
+                                                    placeholder="王曉明" required>
+                                                <div class="invalid-feedback">
+                                                    wrong!!please enter again!
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <label for="username" class="form-label fw-bold">使用者名稱</label>
+                                                <input type="text" class="form-control py-3" id="username"
+                                                    placeholder="avery5456" required>
+                                                <div class="invalid-feedback">
+                                                    wrong!!please enter again!
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <label for="nickname" class="form-label fw-bold">會員暱稱</label>
+                                                <input type="text" class="form-control py-3" id="nickname"
+                                                    placeholder="avery" required>
+                                                <div class="invalid-feedback">
+                                                    wrong!!please enter again!
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <p class="fw-bold">頭像</p>
+                                            <p>建議尺寸：360 x 360 px 以上，圖片檔案大小不可超過 2 MB</p>
+                                            <img src="../assets/images/card4.png"
+                                                class="img-fluid rounded-pill mt-8 w-25 d-block m-auto" alt="avatar">
+                                            <button type="button"
+                                                class="btn btn-outline-primary mt-5 d-block m-auto">更換頭像</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <hr class="mt-10">
+                                    <h3 class="fw-bold text-primary">詳細資料</h3>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="row row-cols-2 mt-4">
+                                        <div class="col-12 col-md-6 col-lg-3">
+                                            <label for="location-1" class="form-label">所在地</label>
+                                            <select class="form-select" id="location-1" required>
+                                                <option selected disabled value="">請選擇縣市</option>
+                                                <option>新北市</option>
+                                                <option>台北市</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                wrong!!please enter again!
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3">
+                                            <label for="location-2" class="form-label">　</label>
+                                            <select class="form-select" id="location-2" required>
+                                                <option selected disabled value="">請選擇區域</option>
+                                                <option>新莊區</option>
+                                                <option>三重區</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                wrong!!please enter again!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-4">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-3">
+                                            <label for="gender" class="form-label">性別</label>
+                                            <select class="form-select" id="gender" required>
+                                                <option selected disabled value="">請選擇性別</option>
+                                                <option>女</option>
+                                                <option>男</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                wrong!!please enter again!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-4">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-3">
+                                            <label for="birth" class="form-label">生日</label>
+                                            <input type="date" id="birth" class="form-control py-3" required>
+                                            <div class="invalid-feedback">
+                                                wrong!!please enter again!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-4">
+                                    <label for="introduce" class="form-label">介紹</label>
+                                    <textarea class="form-control" id="introduce" rows="7" placeholder="自我介紹"
+                                        required></textarea>
+                                    <div class="invalid-feedback">
+                                        wrong!!please enter again!
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-4">
+                                    <button class="btn btn-primary px-10 d-block ms-auto" type="submit">儲存</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

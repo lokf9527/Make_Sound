@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>我的歌單 - Make Sound</title>
+
+    <%- include('./layout/head'); -%>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <div class="container pb-3 pb-md-6 mb-4 mb-md-8">
+            <div class="row">
+                <div class="mb-10">
+                    <h3 class="fw-bold">我的</h3>
+                    <hr>
+                </div>
+
+                <%- include('./layout/myNavbar'); -%>
+
+                    <div class="col-12 col-md-9 col-lg-10">
+                        <div class="px-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="fw-bold">我的 ｜ <span class="text-primary">我的歌單</span></h3>
+                                <a href="./creatPlaylist.html" class="btn btn-primary d-flex align-items-center">
+                                    <span class="material-icons-outlined me-1">
+                                        add
+                                    </span>
+                                    建立歌單
+                                </a>
+                            </div>
+
+                            <ul class="list-group list-group-flush border-bottom">
+                                <li class="list-group-item px-0">
+
+                                    <div class="card border-0">
+                                        <div class="row align-items-center  justify-content-between">
+                                            <div class="col-1">
+                                                <p class="fw-bold m-0 fs-5">1</p>
+                                            </div>
+                                            <div class="col-2 col-lg-1">
+                                                <img src="../assets/images/card2.png" class="img-fluid rounded"
+                                                    alt="下雨天聽的">
+                                            </div>
+                                            <div class="col">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">下雨天聽的</h5>
+                                                    <p class="card-text"><small class="text-muted">15 首歌曲</small></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto ms-auto">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <a href="" class="text-decoration-none text-secondary">
+                                                            <span class="material-icons-outlined fs-1">
+                                                                play_circle
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="" class="text-decoration-none text-secondary">
+                                                            <span class="material-icons-outlined fs-1">
+                                                                delete
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                                <li class="list-group-item px-0">
+
+                                    <div class="card border-0">
+                                        <div class="row align-items-center  justify-content-between">
+                                            <div class="col-1">
+                                                <p class="fw-bold m-0 fs-5">2</p>
+                                            </div>
+                                            <div class="col-2 col-lg-1">
+                                                <img src="../assets/images/card3.png" class="img-fluid rounded"
+                                                    alt="颱風天聽的">
+                                            </div>
+                                            <div class="col">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">颱風天聽的</h5>
+                                                    <p class="card-text"><small class="text-muted">7 首歌曲</small></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto ms-auto">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <a href="" class="text-decoration-none text-secondary icon-box">
+                                                            <span class="material-icons-outlined fs-1">
+                                                                play_circle
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="" class="text-decoration-none text-secondary icon-box">
+                                                            <span class="material-icons-outlined fs-1">
+                                                                delete
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+
+                            <div class="text-center mt-10">
+                                <button type="button" class="btn btn-outline-gray2 rounded-0">載入更多</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

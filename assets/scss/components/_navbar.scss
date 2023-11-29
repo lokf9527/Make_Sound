@@ -1,0 +1,19 @@
+.user-navbar {
+    .link-dark {
+        display: inline-block !important;
+    }
+
+    .active {
+        color: #BE2623 !important;
+        border-bottom: 1px solid #BE2623;
+    }
+}
+
+.nav-custom {
+    .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: #BE2623 !important;
+        background-color: inherit !important;
+        border-bottom: 1px solid #BE2623;
+    }
+}

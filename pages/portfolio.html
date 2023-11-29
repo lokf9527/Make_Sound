@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>作品管理 - Make Sound</title>
+
+    <%- include('./layout/head'); -%>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <div class="container pb-3 pb-md-6 mb-4 mb-md-8">
+
+            <div class="d-flex justify-content-between align-items-center border-bottom">
+                <h3 class="fw-bold">作品管理</h3>
+
+                <ul class="nav nav-pills nav-custom" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-0 link-secondary active" data-bs-toggle="tab"
+                            data-bs-target="#portfolio" type="button">作品列表</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-0 link-secondary" data-bs-toggle="tab"
+                            data-bs-target="#upload-portfolio" type="button">上傳作品</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content mt-10" id="myTabContent">
+
+                <div class="tab-pane fade show active" id="portfolio">
+                    <p class="d-block d-lg-none text-primary">※表格可滑動</p>
+
+                    <div class="table-responsive">
+                        <table class="table align-middle">
+
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="text-nowrap">音樂</th>
+                                    <th scope="col" class="text-nowrap">發布日期</th>
+                                    <th scope="col" class="text-nowrap">播放數</th>
+                                    <th scope="col" class="text-nowrap">收藏數</th>
+                                    <th scope="col" class="text-nowrap">操作</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="d-flex flex-nowrap align-items-center text-nowrap">
+                                            <img src="../assets/images/card1.png" alt="你的聲音（the sound of you）"
+                                                class="w-px-100 rounded me-4 p-1">
+                                            你的聲音（the sound of you）
+                                        </div>
+
+                                    </th>
+                                    <td class="text-nowrap">2023-10-25</td>
+                                    <td class="text-nowrap">123456</td>
+                                    <td class="text-nowrap">2468</td>
+                                    <td class="text-nowrap">
+
+                                        <button type="button" class="bg-transparent border-0">
+                                            <span class="material-icons-outlined fs-1">
+                                                play_circle
+                                            </span>
+                                        </button>
+                                        <button type="button" class="bg-transparent border-0">
+                                            <span class="material-icons-outlined fs-1">
+                                                edit
+                                            </span>
+                                        </button>
+                                        <button type="button" class="bg-transparent border-0">
+                                            <span class="material-icons-outlined fs-1">
+                                                delete
+                                            </span>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        <div class="d-flex flex-nowrap align-items-center text-nowrap">
+                                            <img src="../assets/images/card2.png" alt="nowhere train"
+                                                class="w-px-100 rounded me-4 p-1">
+                                            nowhere train
+                                        </div>
+
+                                    </th>
+                                    <td class="text-nowrap">2023-10-25</td>
+                                    <td class="text-nowrap">123456</td>
+                                    <td class="text-nowrap">2468</td>
+                                    <td class="text-nowrap">
+
+                                        <button type="button" class="bg-transparent border-0">
+                                            <span class="material-icons-outlined fs-1">
+                                                play_circle
+                                            </span>
+                                        </button>
+                                        <button type="button" class="bg-transparent border-0">
+                                            <span class="material-icons-outlined fs-1">
+                                                edit
+                                            </span>
+                                        </button>
+                                        <button type="button" class="bg-transparent border-0">
+                                            <span class="material-icons-outlined fs-1">
+                                                delete
+                                            </span>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <div class="text-center mt-10">
+                        <button type="button" class="btn btn-outline-gray2 rounded-0">載入更多</button>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="upload-portfolio">
+                    <div class="w-75 m-auto">
+
+                        <button type="button" class="btn btn-outline-primary w-100">
+                            <span class="material-icons-outlined fs-rem-10">
+                                backup
+                            </span>
+                            <h4 class="fw-bold mb-4">上傳檔案或將檔案拖曳到這裡</h4>
+                            <p>※ 上傳格式限 MP3，位元傳輸率 192 kbps 以上</p>
+                        </button>
+
+                        <p class="mt-4 lh-lg text-justify">將歌曲發布到 Make Sound，即表示你已聲明並保證你所上傳的作品，是你或你所屬團體自己原創性的作品。若上傳的音樂作品中包含他人的著作，則已取得合法授權，亦無違反 Make
+                            Sound
+                            之使用條款。請勿侵犯其他使用者的版權或隱私權，詳情請參考 Make Sound 的會員服務條款與隱私權保護政策。</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+                crossorigin="anonymous"></script>
+
+</body>
+
+</html>
